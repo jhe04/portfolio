@@ -276,12 +276,17 @@ a:focus,
 a:active {
   text-decoration: none;
   color: black;
+  outline: none;
 }
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.hidden {
+  display: none;
 }
 
 header {
@@ -293,11 +298,14 @@ header .header-intro {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-top: 5%;
 }
 header .header-name {
   margin: auto 0;
+  padding: 0 50px;
 }
 header .header-image {
+  position: relative;
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
 }
@@ -320,21 +328,57 @@ header .header-image .eye::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 6px;
+  left: 7px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 5px;
   height: 5px;
   border-radius: 50%;
   background-color: black;
-  border: 5px solid #5c351d;
+  border: 6px solid #5c351d;
+}
+header .speech-bubble-left {
+  position: absolute;
+  width: 60%;
+  top: 0;
+  left: -25%;
+}
+header .speech-bubble-left .speech-bubble-text-about {
+  position: absolute;
+  width: 70%;
+  right: 15%;
+  bottom: 40%;
+}
+header .speech-bubble-left .speech-bubble-text-skills {
+  position: absolute;
+  width: 70%;
+  right: 15%;
+  bottom: 35%;
+}
+header .speech-bubble-right {
+  position: absolute;
+  width: 50%;
+  top: 5%;
+  right: -15%;
+}
+header .speech-bubble-right .speech-bubble-text-projects {
+  position: absolute;
+  width: 70%;
+  right: 10%;
+  bottom: 35%;
+}
+header .speech-bubble-right .speech-bubble-text-contact {
+  position: absolute;
+  width: 70%;
+  right: 10%;
+  bottom: 35%;
 }
 
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 3%;
+  padding: 2%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -346,4 +390,9 @@ nav ul a {
   font-weight: 700;
   padding: 5px 20px;
   text-transform: uppercase;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+nav ul a:hover, nav ul a:active, nav ul a:focus {
+  color: #2c698d;
 }

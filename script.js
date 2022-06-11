@@ -3,7 +3,11 @@ const app = {};
 app.init = () => {
   console.log('app has been initialized');
   app.addEyeballEventlistener();
+  app.addNavEventListener();
 };
+
+//   credit to "Online Tutorials"on youtube for the moving eye animation
+//  https://www.youtube.com/watch?v=IFNUXlqtROc
 
 app.eyeball = (event) => {
   const eye = document.querySelectorAll('.eye');
@@ -19,6 +23,35 @@ app.eyeball = (event) => {
 
 app.addEyeballEventlistener = () => {
   document.querySelector('body').addEventListener('mousemove', app.eyeball);
+};
+
+// Speech bubble
+app.openSpeechBubble = function () {
+  console.log('speech bubble opened');
+  document
+    .querySelector(`.speech-bubble-${this.id}`)
+    .classList.toggle('hidden');
+  document
+    .querySelector(`.speech-bubble-text-${this.id}`)
+    .classList.toggle('hidden');
+};
+
+app.closeSpeechBubble = function () {
+  document
+    .querySelector(`.speech-bubble-${this.id}`)
+    .classList.toggle('hidden');
+  document
+    .querySelector(`.speech-bubble-text-${this.id}`)
+    .classList.toggle('hidden');
+  console.log('speech bubble closed');
+};
+
+app.addNavEventListener = () => {
+  const navBarLinks = document.querySelectorAll('nav a');
+  navBarLinks.forEach((link) => {
+    link.addEventListener('mouseover', app.openSpeechBubble);
+    link.addEventListener('mouseout', app.closeSpeechBubble);
+  });
 };
 
 app.init();

@@ -19,10 +19,10 @@
       <div class="container">
         <nav>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about" id="about">About</a></li>
+            <li><a href="#skills" id="skills">Skills</a></li>
+            <li><a href="#projects" id="projects">Projects</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-intro">
@@ -34,6 +34,36 @@
             <img src="./assets/bitmoji/smile.png" alt="bitmoji smiling" />
             <div class="eye left-eye"></div>
             <div class="eye right-eye"></div>
+            <!-- left speech bubble -->
+            <div
+              class="speech-bubble-left speech-bubble-about speech-bubble-skills hidden"
+            >
+              <img
+                src="./assets/left-sided-speech-bubble.png"
+                alt="speech bubble"
+              />
+              <p class="speech-bubble-text speech-bubble-text-about hidden">
+                Great place to start to learn more about me!
+              </p>
+              <p class="speech-bubble-text speech-bubble-text-skills hidden">
+                Great place to start to learn more about my skills!
+              </p>
+            </div>
+            <!-- right speech bubble -->
+            <div
+              class="speech-bubble-right speech-bubble-projects speech-bubble-contact hidden"
+            >
+              <img
+                src="./assets/1200px-Speech_bubble.svg.png"
+                alt="speech bubble"
+              />
+              <p class="speech-bubble-text speech-bubble-text-projects hidden">
+                Check out my awesome projects!
+              </p>
+              <p class="speech-bubble-text speech-bubble-text-contact hidden">
+                Don't hesitate to contact me!
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -42,17 +72,17 @@
     <!-- Main -->
     <main>
       <!-- About -->
-      <section></section>
+      <section id="about"></section>
       <!-- Skills -->
-      <section></section>
+      <section id="skills"></section>
       <!-- Projects -->
-      <section></section>
+      <section id="projects"></section>
     </main>
 
     <!-- Footer -->
     <footer>
       <!-- Contact Form -->
-      <section></section>
+      <section id="contact"></section>
     </footer>
 
     <script src="./script.js"></script>

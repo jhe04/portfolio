@@ -3,11 +3,14 @@ header {
   .header-intro {
     display: flex;
     justify-content: space-around;
+    margin-top: 5%;
   }
   .header-name {
     margin: auto 0;
+    padding: 0 50px;
   }
   .header-image {
+    position: relative;
     flex-basis: 45%;
     .eye {
       position: relative;
@@ -28,13 +31,49 @@ header {
       content: '';
       position: absolute;
       top: 50%;
-      left: 6px;
+      left: 7px;
       transform: translate(-50%, -50%);
       width: 5px;
       height: 5px;
       border-radius: 50%;
       background-color: black;
-      border: 5px solid #5c351d;
+      border: 6px solid #5c351d;
+    }
+  }
+  .speech-bubble-left {
+    position: absolute;
+    width: 60%;
+    top: 0;
+    left: -25%;
+    .speech-bubble-text-about {
+      position: absolute;
+      width: 70%;
+      right: 15%;
+      bottom: 40%;
+    }
+    .speech-bubble-text-skills {
+      position: absolute;
+      width: 70%;
+      right: 15%;
+      bottom: 35%;
+    }
+  }
+  .speech-bubble-right {
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    right: -15%;
+    .speech-bubble-text-projects {
+      position: absolute;
+      width: 70%;
+      right: 10%;
+      bottom: 35%;
+    }
+    .speech-bubble-text-contact {
+      position: absolute;
+      width: 70%;
+      right: 10%;
+      bottom: 35%;
     }
   }
 }
