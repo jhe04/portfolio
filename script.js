@@ -27,23 +27,17 @@ app.addEyeballEventlistener = () => {
 
 // Speech bubble
 app.openSpeechBubble = function () {
-  console.log('speech bubble opened');
   document
-    .querySelector(`.speech-bubble-${this.id}`)
+    .querySelector(`.text-${this.id}`)
     .classList.toggle('hidden');
   document
-    .querySelector(`.speech-bubble-text-${this.id}`)
-    .classList.toggle('hidden');
 };
 
 app.closeSpeechBubble = function () {
   document
-    .querySelector(`.speech-bubble-${this.id}`)
+    .querySelector(`.text-${this.id}`)
     .classList.toggle('hidden');
-  document
-    .querySelector(`.speech-bubble-text-${this.id}`)
-    .classList.toggle('hidden');
-  console.log('speech bubble closed');
+
 };
 
 app.addNavEventListener = () => {

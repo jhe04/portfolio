@@ -303,11 +303,14 @@ header .header-intro {
 header .header-name {
   margin: auto 0;
   padding: 0 50px;
+  width: 55%;
+}
+header .header-name h1 {
+  font-size: 3rem;
 }
 header .header-image {
   position: relative;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  width: 45%;
 }
 header .header-image .eye {
   position: relative;
@@ -337,41 +340,50 @@ header .header-image .eye::before {
   background-color: black;
   border: 6px solid #5c351d;
 }
-header .speech-bubble-left {
-  position: absolute;
-  width: 60%;
-  top: 0;
-  left: -25%;
+header #my-name:hover {
+  color: #2c698d;
 }
-header .speech-bubble-left .speech-bubble-text-about {
+header .speech-bubble {
   position: absolute;
-  width: 70%;
-  right: 15%;
-  bottom: 40%;
+  width: 30%;
+  left: 40%;
+  max-width: 30em;
+  background-color: #fff;
+  padding: 1.125em 1.5em;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
 }
-header .speech-bubble-left .speech-bubble-text-skills {
+header .speech-bubble::before {
+  content: "";
   position: absolute;
-  width: 70%;
-  right: 15%;
-  bottom: 35%;
+  width: 0;
+  height: 0;
+  bottom: -15%;
+  right: 1.5em;
+  border: 0.75rem solid transparent;
+  border-bottom: none;
+  border-top-color: #fff;
+  -webkit-filter: drop-shadow(0.2625rem 0.1rem 0.0625rem rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0.2625rem 0.1rem 0.0625rem rgba(0, 0, 0, 0.1));
 }
-header .speech-bubble-right {
-  position: absolute;
-  width: 50%;
-  top: 5%;
-  right: -15%;
+header .speech-bubble.text-skills {
+  left: 45%;
 }
-header .speech-bubble-right .speech-bubble-text-projects {
-  position: absolute;
-  width: 70%;
-  right: 10%;
-  bottom: 35%;
+header .speech-bubble.text-skills::before {
+  right: 2rem;
 }
-header .speech-bubble-right .speech-bubble-text-contact {
-  position: absolute;
-  width: 70%;
-  right: 10%;
-  bottom: 35%;
+header .speech-bubble.text-projects {
+  left: 65%;
+}
+header .speech-bubble.text-projects::before {
+  left: 4rem;
+}
+header .speech-bubble.text-contact {
+  left: 70%;
+}
+header .speech-bubble.text-contact::before {
+  left: 2rem;
 }
 
 nav ul {

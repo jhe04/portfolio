@@ -1,5 +1,6 @@
 header {
   min-height: 100vh;
+
   .header-intro {
     display: flex;
     justify-content: space-around;
@@ -8,10 +9,14 @@ header {
   .header-name {
     margin: auto 0;
     padding: 0 50px;
+    width: 55%;
+    h1 {
+      font-size: 3rem;
+    }
   }
   .header-image {
     position: relative;
-    flex-basis: 45%;
+    width: 45%;
     .eye {
       position: relative;
       width: 5%;
@@ -40,40 +45,107 @@ header {
       border: 6px solid #5c351d;
     }
   }
-  .speech-bubble-left {
-    position: absolute;
-    width: 60%;
-    top: 0;
-    left: -25%;
-    .speech-bubble-text-about {
-      position: absolute;
-      width: 70%;
-      right: 15%;
-      bottom: 40%;
-    }
-    .speech-bubble-text-skills {
-      position: absolute;
-      width: 70%;
-      right: 15%;
-      bottom: 35%;
-    }
+  //   .speech-bubble-left {
+  //     position: absolute;
+  //     width: 60%;
+  //     top: 0;
+  //     left: -25%;
+  //     .speech-bubble-text-about {
+  //       position: absolute;
+  //       width: 70%;
+  //       right: 15%;
+  //       bottom: 40%;
+  //     }
+  //     .speech-bubble-text-skills {
+  //       position: absolute;
+  //       width: 70%;
+  //       right: 15%;
+  //       bottom: 35%;
+  //     }
+  //   }
+  //   .speech-bubble-right {
+  //     position: absolute;
+  //     width: 50%;
+  //     top: 0;
+  //     right: -10%;
+  //     .speech-bubble-text-projects {
+  //       position: absolute;
+  //       width: 70%;
+  //       right: 10%;
+  //       bottom: 35%;
+  //     }
+  //     .speech-bubble-text-contact {
+  //       position: absolute;
+  //       width: 70%;
+  //       right: 10%;
+  //       bottom: 35%;
+  //     }
+  //   }
+  //   .speech-bubble-bottom-left {
+  //     position: absolute;
+  //     width: 40%;
+  //     bottom: 0%;
+  //     left: -20%;
+  //     .speech-bubble-text {
+  //       position: absolute;
+  //       font-size: 0.8rem;
+  //       width: 70%;
+  //       top: 15%;
+  //       left: 10%;
+  //     }
+  //   }
+  #my-name:hover {
+    color: $quaternaryColor;
   }
-  .speech-bubble-right {
+
+  .speech-bubble {
+    // layout
     position: absolute;
-    width: 50%;
-    top: 5%;
-    right: -15%;
-    .speech-bubble-text-projects {
+    width: 30%;
+    left: 40%;
+    max-width: 30em;
+    // looks
+    background-color: #fff;
+    padding: 1.125em 1.5em;
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
+      0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+
+    &::before {
+      // layout
+      content: '';
       position: absolute;
-      width: 70%;
-      right: 10%;
-      bottom: 35%;
+      width: 0;
+      height: 0;
+      bottom: -15%;
+      right: 1.5em; // offset should move with padding of parent
+      border: 0.75rem solid transparent;
+      border-bottom: none;
+
+      // looks
+      border-top-color: #fff;
+      filter: drop-shadow(0.2625rem 0.1rem 0.0625rem rgba(0, 0, 0, 0.1));
     }
-    .speech-bubble-text-contact {
-      position: absolute;
-      width: 70%;
-      right: 10%;
-      bottom: 35%;
+
+    &.text-skills {
+      left: 45%;
+      &::before {
+        right: 2rem;
+      }
+    }
+
+    &.text-projects {
+      left: 65%;
+      &::before {
+        left: 4rem;
+      }
+    }
+
+    &.text-contact {
+      left: 70%;
+      &::before {
+        left: 2rem;
+      }
     }
   }
 }

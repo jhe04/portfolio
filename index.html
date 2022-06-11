@@ -19,51 +19,47 @@
       <div class="container">
         <nav>
           <ul>
-            <li><a href="#about" id="about">About</a></li>
-            <li><a href="#skills" id="skills">Skills</a></li>
-            <li><a href="#projects" id="projects">Projects</a></li>
-            <li><a href="#contact" id="contact">Contact</a></li>
+            <li><a href="#about-me" id="about">About</a></li>
+            <li><a href="#my-skills" id="skills">Skills</a></li>
+            <li><a href="#my-projects" id="projects">Projects</a></li>
+            <li><a href="#contact-me" id="contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-intro">
           <div class="header-name">
-            <h1>Hi there! My name is Jielun</h1>
-            <h2>Front-End Developer</h2>
+            <h1>
+              Hi there! My name is
+              <a
+                href="https://namedrop.io/jielunhe"
+                target="_blank"
+                id="my-name"
+                >Jielun</a
+              >
+            </h1>
+            <h2>I'm a Front-End Developer</h2>
           </div>
+          <!-- Bitmoji main image -->
           <div class="header-image">
             <img src="./assets/bitmoji/smile.png" alt="bitmoji smiling" />
             <div class="eye left-eye"></div>
             <div class="eye right-eye"></div>
-            <!-- left speech bubble -->
-            <div
-              class="speech-bubble-left speech-bubble-about speech-bubble-skills hidden"
-            >
-              <img
-                src="./assets/left-sided-speech-bubble.png"
-                alt="speech bubble"
-              />
-              <p class="speech-bubble-text speech-bubble-text-about hidden">
-                Great place to start to learn more about me!
-              </p>
-              <p class="speech-bubble-text speech-bubble-text-skills hidden">
-                Great place to start to learn more about my skills!
-              </p>
-            </div>
-            <!-- right speech bubble -->
-            <div
-              class="speech-bubble-right speech-bubble-projects speech-bubble-contact hidden"
-            >
-              <img
-                src="./assets/1200px-Speech_bubble.svg.png"
-                alt="speech bubble"
-              />
-              <p class="speech-bubble-text speech-bubble-text-projects hidden">
-                Check out my awesome projects!
-              </p>
-              <p class="speech-bubble-text speech-bubble-text-contact hidden">
-                Don't hesitate to contact me!
-              </p>
-            </div>
+          </div>
+
+          <!-- speech bubbles styling credit to Rik Schennink-->
+          <!-- https://codepen.io/rikschennink/pen/mjywQb -->
+          <div>
+            <p class="speech-bubble text-about hidden">
+              Great place to start to learn more about me!
+            </p>
+            <p class="speech-bubble text-skills hidden">
+              Great place to start to learn more about my skills!
+            </p>
+            <p class="speech-bubble text-projects hidden">
+              Check out my awesome projects!
+            </p>
+            <p class="speech-bubble text-contact hidden">
+              Don't hesitate to contact me!
+            </p>
           </div>
         </div>
       </div>
@@ -71,18 +67,31 @@
 
     <!-- Main -->
     <main>
-      <!-- About -->
-      <section id="about"></section>
-      <!-- Skills -->
-      <section id="skills"></section>
-      <!-- Projects -->
-      <section id="projects"></section>
+      <div class="container">
+        <!-- About -->
+        <section id="about-me">
+          <h2>About me!</h2>
+          <p>
+            My name is Jielun, and I am a front-end developer. I create
+            accessible and responsive websites using front-end technologies to
+            ensure every person is able to have the best user experience. Coming
+            from a startup, I am quick to adapt to changes and action feedback,
+            effectively collaborate with other teams, and being resourceful to
+            solve complex problems by myself.
+          </p>
+          <img src="./assets/bitmoji/thumbs-up.png" alt="" />
+        </section>
+        <!-- Skills -->
+        <section id="my-skills"></section>
+        <!-- Projects -->
+        <section id="my-projects"></section>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer>
       <!-- Contact Form -->
-      <section id="contact"></section>
+      <section id="contact-me"></section>
     </footer>
 
     <script src="./script.js"></script>
