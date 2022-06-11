@@ -1,6 +1,13 @@
 nav {
   ul {
     display: flex;
-    
+    margin-top: 3%;
+    justify-content: flex-end;
+    column-gap: 5%;
+    a {
+      font-weight: 700;
+      padding: 5px 20px;
+      text-transform: uppercase;
+    }
   }
 }
