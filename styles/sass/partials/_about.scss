@@ -1,5 +1,6 @@
 #about-me {
   background-color: $color5;
+  padding-top: 50px;
 }
 .about {
   min-height: 40vh;
@@ -11,5 +12,8 @@
   .about-text {
     text-align: justify;
     width: 60%;
+    p {
+      margin-top: 20px;
+    }
   }
 }

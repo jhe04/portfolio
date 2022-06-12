@@ -5,7 +5,7 @@ header {
   .header-intro {
     display: flex;
     justify-content: space-around;
-    margin-top: 10%;
+    margin-top: 15%;
   }
   .header-name {
     margin: auto 0;
@@ -13,7 +13,11 @@ header {
     width: 55%;
     h1 {
       font-size: 3rem;
-      // position: relative;
+      margin-bottom: 2rem;
+      letter-spacing: 5px;
+    }
+    h2 {
+      letter-spacing: 3px;
     }
   }
   .header-image {
@@ -48,18 +52,22 @@ header {
     }
   }
 
+  .header-image-full {
+    display: none;
+  }
+
   #my-name {
     position: relative;
     z-index: 0;
     &:hover {
-      color: $color6;
+      color: $color5;
     }
     &::before {
       content: '';
       position: absolute;
       width: 100%;
       height: 20px;
-      background-color: rgba($color: $color5, $alpha: 0.7);
+      background-color: rgba($color: $color6, $alpha: 0.7);
       // box-shadow: 0 0 2rem rgba($color: $primaryColor, $alpha: 0.8);
       z-index: -1;
       bottom: 0;
@@ -74,6 +82,8 @@ header {
     top: 17%;
     max-width: 30em;
     // looks
+    letter-spacing: initial;
+    line-height: initial;
     background-color: #fff;
     padding: 1.125em 1.5em;
     border-radius: 1rem;
@@ -86,7 +96,7 @@ header {
       position: absolute;
       width: 0;
       height: 0;
-      bottom: -15%;
+      bottom: -10%;
       right: 1.5em; // offset should move with padding of parent
       border: 0.75rem solid transparent;
       border-bottom: none;
@@ -100,6 +110,7 @@ header {
       left: 45%;
       &::before {
         right: 4rem;
+        bottom: -10%;
       }
     }
 
