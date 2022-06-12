@@ -12,6 +12,7 @@ nav {
       &:hover,
       &:active,
       &:focus {
+        box-sizing: border-box;
         color: $quaternaryColor;
       }
     }

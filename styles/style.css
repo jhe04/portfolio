@@ -384,7 +384,7 @@ header .speech-bubble.text-skills {
   left: 45%;
 }
 header .speech-bubble.text-skills::before {
-  right: 2rem;
+  right: 4rem;
 }
 header .speech-bubble.text-projects {
   left: 60%;
@@ -421,6 +421,8 @@ nav ul a {
   transition: all 0.2s;
 }
 nav ul a:hover, nav ul a:active, nav ul a:focus {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #2c698d;
 }
 
