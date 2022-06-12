@@ -298,7 +298,7 @@ header .header-intro {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 header .header-name {
   margin: auto 0;
@@ -340,13 +340,26 @@ header .header-image .eye::before {
   background-color: black;
   border: 6px solid #5c351d;
 }
+header #my-name {
+  position: relative;
+}
 header #my-name:hover {
   color: #2c698d;
+}
+header #my-name::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(39, 38, 67, 0.7);
+  z-index: -1;
+  bottom: 0;
 }
 header .speech-bubble {
   position: absolute;
   width: 30%;
   left: 40%;
+  top: 17%;
   max-width: 30em;
   background-color: #fff;
   padding: 1.125em 1.5em;
@@ -374,16 +387,18 @@ header .speech-bubble.text-skills::before {
   right: 2rem;
 }
 header .speech-bubble.text-projects {
-  left: 65%;
+  left: 60%;
+  top: 20%;
 }
 header .speech-bubble.text-projects::before {
-  left: 4rem;
+  left: 6rem;
 }
 header .speech-bubble.text-contact {
-  left: 70%;
+  left: 65%;
+  top: 20%;
 }
 header .speech-bubble.text-contact::before {
-  left: 2rem;
+  left: 4rem;
 }
 
 nav ul {
@@ -407,4 +422,21 @@ nav ul a {
 }
 nav ul a:hover, nav ul a:active, nav ul a:focus {
   color: #2c698d;
+}
+
+.about {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .about-image {
+  width: 40%;
+}
+.about .about-text {
+  text-align: justify;
+  width: 60%;
 }

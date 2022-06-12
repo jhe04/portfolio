@@ -27,24 +27,21 @@ app.addEyeballEventlistener = () => {
 
 // Speech bubble
 app.openSpeechBubble = function () {
-  document
-    .querySelector(`.text-${this.id}`)
-    .classList.toggle('hidden');
-  document
+  document.querySelector(`.text-${this.id}`).classList.toggle('hidden');
+  document;
 };
 
 app.closeSpeechBubble = function () {
-  document
-    .querySelector(`.text-${this.id}`)
-    .classList.toggle('hidden');
-
+  document.querySelector(`.text-${this.id}`).classList.toggle('hidden');
 };
 
 app.addNavEventListener = () => {
   const navBarLinks = document.querySelectorAll('nav a');
   navBarLinks.forEach((link) => {
     link.addEventListener('mouseover', app.openSpeechBubble);
+    link.addEventListener('focusin', app.openSpeechBubble);
     link.addEventListener('mouseout', app.closeSpeechBubble);
+    link.addEventListener('focusout', app.closeSpeechBubble);
   });
 };
 

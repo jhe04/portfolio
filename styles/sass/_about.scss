@@ -1,0 +1,12 @@
+.about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  .about-image {
+    width: 40%;
+  }
+  .about-text {
+    text-align: justify;
+    width: 60%;
+  }
+}

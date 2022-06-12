@@ -4,7 +4,7 @@ header {
   .header-intro {
     display: flex;
     justify-content: space-around;
-    margin-top: 5%;
+    margin-top: 10%;
   }
   .header-name {
     margin: auto 0;
@@ -12,6 +12,7 @@ header {
     width: 55%;
     h1 {
       font-size: 3rem;
+      // position: relative;
     }
   }
   .header-image {
@@ -45,57 +46,22 @@ header {
       border: 6px solid #5c351d;
     }
   }
-  //   .speech-bubble-left {
-  //     position: absolute;
-  //     width: 60%;
-  //     top: 0;
-  //     left: -25%;
-  //     .speech-bubble-text-about {
-  //       position: absolute;
-  //       width: 70%;
-  //       right: 15%;
-  //       bottom: 40%;
-  //     }
-  //     .speech-bubble-text-skills {
-  //       position: absolute;
-  //       width: 70%;
-  //       right: 15%;
-  //       bottom: 35%;
-  //     }
-  //   }
-  //   .speech-bubble-right {
-  //     position: absolute;
-  //     width: 50%;
-  //     top: 0;
-  //     right: -10%;
-  //     .speech-bubble-text-projects {
-  //       position: absolute;
-  //       width: 70%;
-  //       right: 10%;
-  //       bottom: 35%;
-  //     }
-  //     .speech-bubble-text-contact {
-  //       position: absolute;
-  //       width: 70%;
-  //       right: 10%;
-  //       bottom: 35%;
-  //     }
-  //   }
-  //   .speech-bubble-bottom-left {
-  //     position: absolute;
-  //     width: 40%;
-  //     bottom: 0%;
-  //     left: -20%;
-  //     .speech-bubble-text {
-  //       position: absolute;
-  //       font-size: 0.8rem;
-  //       width: 70%;
-  //       top: 15%;
-  //       left: 10%;
-  //     }
-  //   }
-  #my-name:hover {
-    color: $quaternaryColor;
+
+  #my-name {
+    position: relative;
+    &:hover {
+      color: $quaternaryColor;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 20px;
+      background-color: rgba($color: $primaryColor, $alpha: 0.7);
+      // box-shadow: 0 0 2rem rgba($color: $primaryColor, $alpha: 0.8);
+      z-index: -1;
+      bottom: 0;
+    }
   }
 
   .speech-bubble {
@@ -103,6 +69,7 @@ header {
     position: absolute;
     width: 30%;
     left: 40%;
+    top: 17%;
     max-width: 30em;
     // looks
     background-color: #fff;
@@ -135,16 +102,18 @@ header {
     }
 
     &.text-projects {
-      left: 65%;
+      left: 60%;
+      top: 20%;
       &::before {
-        left: 4rem;
+        left: 6rem;
       }
     }
 
     &.text-contact {
-      left: 70%;
+      left: 65%;
+      top: 20%;
       &::before {
-        left: 2rem;
+        left: 4rem;
       }
     }
   }
