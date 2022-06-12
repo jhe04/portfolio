@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
@@ -78,7 +79,7 @@
       <!-- About -->
       <section id="about-me">
         <div class="container about">
-          <div class="about-text">
+          <div class="about-text" data-aos="fade-right" data-aos-once="true">
             <h2>About me!</h2>
             <p>
               My name is Jielun, and I am a front-end developer. I create
@@ -89,7 +90,7 @@
               resourceful to solve complex problems by myself.
             </p>
           </div>
-          <div class="about-image">
+          <div class="about-image" data-aos="fade-left" data-aos-once="true">
             <img src="./assets/about-pic.png" alt="" />
           </div>
         </div>
@@ -97,7 +98,7 @@
       <!-- Skills -->
       <section id="my-skills">
         <div class="container">
-          <div class="my-skills">
+          <div class="my-skills" data-aos="fade-up" data-aos-once="true">
             <h2>Skills & Toolkit</h2>
             <ul class="skills-wrapper">
               <li>
@@ -158,10 +159,10 @@
           <h2>Projects</h2>
 
           <div class="project-container project-odd">
-            <div class="project-image">
+            <div class="project-image" data-aos="fade-right" data-aos-once="true">
               <img src="./assets/drive-solo-vector.png" alt="" />
             </div>
-            <div class="project-information">
+            <div class="project-information" data-aos="fade-left" data-aos-once="true">
               <h3>Drive Solo</h3>
               <p class="dev-language">HTML, CSS</p>
               <p>
@@ -171,16 +172,22 @@
                 unde itaque similique, doloremque eveniet voluptas recusandae?
               </p>
               <div class="project-links">
-                <a href="">view live</a>
-                <a href="">view code</a>
+                <a
+                  href="https://gentle-syrniki-8b3f76.netlify.app/"
+                  target="_blank"
+                  >view live</a
+                >
+                <a href="https://github.com/jhe04/drive-solo" target="_blank"
+                  >view code</a
+                >
               </div>
             </div>
           </div>
 
           <div class="project-container project-even">
-            <div class="project-information">
+            <div class="project-information" data-aos="fade-right" data-aos-once="true">
               <h3>Bar-One</h3>
-              <p class="dev-language">HTML, CSS, JavaScript</p>
+              <p class="dev-language">HTML, CSS, SCSS, JavaScript</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laudantium illo nemo dolor explicabo labore laboriosam cum
@@ -188,11 +195,17 @@
                 unde itaque similique, doloremque eveniet voluptas recusandae?
               </p>
               <div class="project-links">
-                <a href="">view live</a>
-                <a href="">view code</a>
+                <a
+                  href="https://mellow-truffle-0501f8.netlify.app/"
+                  target="_blank"
+                  >view live</a
+                >
+                <a href="https://github.com/jhe04/bar-one" target="_blank"
+                  >view code</a
+                >
               </div>
             </div>
-            <div class="project-image">
+            <div class="project-image" data-aos="fade-left" data-aos-once="true">
               <img src="./assets/bar-one-vector.png" alt="" />
             </div>
           </div>
@@ -203,9 +216,68 @@
     <!-- Footer -->
     <footer>
       <!-- Contact Form -->
-      <section id="contact-me"></section>
+      <section id="contact-me">
+        <div class="container contact">
+          <div class="contact-info" data-aos="fade-right" data-aos-once="true">
+            <h2>Get in touch</h2>
+            <div>
+              <ul class="contact-social">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/jielun-he/"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/jhe04" target="_blank"
+                    ><i class="fa-brands fa-github-square"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="mailto:jielun.he@live.ca"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://medium.com/@jielun.he" target="_blank"
+                    ><i class="fa-solid fa-m"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <p>
+              Check out my socials above, or fill out the form to get in
+              contact!
+            </p>
+          </div>
+          <form action="" data-aos="fade-left" data-aos-once="true">
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="name" />
+            <label for="email"></label>
+            <input type="text" id="email" placeholder="email" />
+            <label for="message"></label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="message"
+            ></textarea>
+            <button>Submit</button>
+          </form>
+        </div>
+      </section>
+      <div class="footer">
+        <p>
+          Built by
+          <a href="https://github.com/jhe04" target="_blank">Jielun He</a> ©2022
+        </p>
+      </div>
     </footer>
 
+    <!-- scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

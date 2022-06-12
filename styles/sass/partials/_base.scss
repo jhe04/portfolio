@@ -3,6 +3,11 @@ html {
   font-size: 125%;
 }
 
+p,
+a {
+  font-family: $openSans;
+}
+
 h1,
 h2,
 h3,
@@ -34,7 +39,7 @@ a:active {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 

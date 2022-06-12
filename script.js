@@ -46,3 +46,4 @@ app.addNavEventListener = () => {
 };
 
 app.init();
+AOS.init();
