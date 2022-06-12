@@ -1,0 +1,29 @@
+#my-skills {
+  background-color: $color4;
+}
+
+.my-skills {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    flex-basis: 25%;
+    padding: 20px 0;
+  }
+  i {
+    font-size: 3rem;
+    color: $color1;
+    &:hover {
+      color: $color2;
+    }
+  }
+  p {
+    margin: 0;
+  }
+}

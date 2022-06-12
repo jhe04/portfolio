@@ -9,11 +9,13 @@ nav {
       padding: 5px 20px;
       text-transform: uppercase;
       transition: all 0.2s;
+      display: inline-block;
       &:hover,
       &:active,
       &:focus {
         box-sizing: border-box;
-        color: $quaternaryColor;
+        color: $color5;
+        transform: scale(1.1);
       }
     }
   }
