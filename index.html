@@ -26,14 +26,15 @@
     <!-- Header -->
     <header>
       <div class="container">
-        <nav>
+        <nav class="desktop-nav">
           <ul>
-            <li><a href="#about-me" id="about">About</a></li>
-            <li><a href="#my-skills" id="skills">Skills</a></li>
-            <li><a href="#my-projects" id="projects">Projects</a></li>
-            <li><a href="#contact-me" id="contact">Contact</a></li>
+            <li><a href="#about-me" id="about" class="nav-link">About</a></li>
+            <li><a href="#my-skills" id="skills" class="nav-link">Skills</a></li>
+            <li><a href="#my-projects" id="projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact-me" id="contact" class="nav-link">Contact</a></li>
           </ul>
         </nav>
+        <i class="fa-solid fa-bars hamburger-menu"></i>
         <div class="header-intro">
           <div class="header-name">
             <h1>
@@ -54,7 +55,7 @@
             <div class="eye right-eye"></div>
           </div>
           <div class="header-image-full">
-            <img src="./assets/bitmoji/smile-full.png" alt="">
+            <img src="./assets/bitmoji/smile-full.png" alt="" />
           </div>
 
           <!-- speech bubbles styling credit to Rik Schennink-->
@@ -162,10 +163,18 @@
           <h2>Projects</h2>
 
           <div class="project-container project-odd">
-            <div class="project-image" data-aos="fade-right" data-aos-once="true">
+            <div
+              class="project-image"
+              data-aos="fade-right"
+              data-aos-once="true"
+            >
               <img src="./assets/drive-solo-vector.png" alt="" />
             </div>
-            <div class="project-information" data-aos="fade-left" data-aos-once="true">
+            <div
+              class="project-information"
+              data-aos="fade-left"
+              data-aos-once="true"
+            >
               <h3>Drive Solo</h3>
               <p class="dev-language">HTML, CSS</p>
               <p>
@@ -188,7 +197,11 @@
           </div>
 
           <div class="project-container project-even">
-            <div class="project-information" data-aos="fade-right" data-aos-once="true">
+            <div
+              class="project-information"
+              data-aos="fade-right"
+              data-aos-once="true"
+            >
               <h3>Bar-One</h3>
               <p class="dev-language">HTML, CSS, SCSS, JavaScript</p>
               <p>
@@ -208,7 +221,11 @@
                 >
               </div>
             </div>
-            <div class="project-image" data-aos="fade-left" data-aos-once="true">
+            <div
+              class="project-image"
+              data-aos="fade-left"
+              data-aos-once="true"
+            >
               <img src="./assets/bar-one-vector.png" alt="" />
             </div>
           </div>

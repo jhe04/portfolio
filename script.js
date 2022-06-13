@@ -4,6 +4,7 @@ app.init = () => {
   console.log('app has been initialized');
   app.addEyeballEventlistener();
   app.addNavEventListener();
+  app.mobileMenuEventListener();
 };
 
 //   credit to "Online Tutorials"on youtube for the moving eye animation
@@ -43,6 +44,21 @@ app.addNavEventListener = () => {
     link.addEventListener('mouseout', app.closeSpeechBubble);
     link.addEventListener('focusout', app.closeSpeechBubble);
   });
+};
+
+//mobile menu
+app.mobileMenuEventListener = () => {
+  const menuIcon = document.querySelector('.hamburger-menu');
+  const navBar = document.querySelector('.desktop-nav');
+  const navLink = document.querySelectorAll('.nav-link');
+  menuIcon.addEventListener('click', function () {
+    navBar.classList.toggle('reveal-menu');
+  });
+  navLink.forEach(navLink => {
+    navLink.addEventListener('click', function () {
+      navBar.classList.toggle('reveal-menu');
+    });
+  })
 };
 
 app.init();
