@@ -130,4 +130,14 @@ header {
       }
     }
   }
+  .down-arrow {
+    text-align: center;
+    i {
+      font-size: 2rem;
+      &:hover {
+        color: $color5;
+        cursor: pointer;
+      }
+    }
+  }
 }

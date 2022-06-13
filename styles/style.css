@@ -433,6 +433,16 @@ header .speech-bubble.text-contact {
 header .speech-bubble.text-contact::before {
   left: 4rem;
 }
+header .down-arrow {
+  text-align: center;
+}
+header .down-arrow i {
+  font-size: 2rem;
+}
+header .down-arrow i:hover {
+  color: #f2f4f5;
+  cursor: pointer;
+}
 
 .desktop-nav ul {
   display: -webkit-box;
@@ -855,6 +865,9 @@ header .speech-bubble.text-contact::before {
   }
   header .speech-bubble-container {
     display: none;
+  }
+  header .down-arrow {
+    margin-top: 20px;
   }
 }
 @media (max-width: 500px) {
