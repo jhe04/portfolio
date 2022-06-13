@@ -877,6 +877,7 @@ header .down-arrow i:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    min-height: 100vh;
   }
   .about .about-image {
     -webkit-box-ordinal-group: 0;
@@ -887,6 +888,10 @@ header .down-arrow i:hover {
   .about .about-text {
     width: 90%;
     margin: 20px 0;
+  }
+
+  .my-skills {
+    min-height: 100vh;
   }
 
   .skills-wrapper li {
