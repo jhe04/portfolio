@@ -853,6 +853,9 @@ header .speech-bubble.text-contact::before {
   header .header-intro {
     margin-top: 0;
   }
+  header .speech-bubble-container {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .about {

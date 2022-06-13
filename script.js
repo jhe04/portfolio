@@ -54,11 +54,11 @@ app.mobileMenuEventListener = () => {
   menuIcon.addEventListener('click', function () {
     navBar.classList.toggle('reveal-menu');
   });
-  navLink.forEach(navLink => {
+  navLink.forEach((navLink) => {
     navLink.addEventListener('click', function () {
       navBar.classList.toggle('reveal-menu');
     });
-  })
+  });
 };
 
 app.init();
