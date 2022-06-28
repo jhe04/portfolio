@@ -1,10 +1,10 @@
 const app = {};
 
 app.init = () => {
-  console.log('app has been initialized');
   app.addEyeballEventlistener();
   app.addNavEventListener();
   app.mobileMenuEventListener();
+  app.submitForm();
 };
 
 //   credit to "Online Tutorials"on youtube for the moving eye animation
@@ -59,6 +59,15 @@ app.mobileMenuEventListener = () => {
       navBar.classList.toggle('reveal-menu');
     });
   });
+};
+
+//contact form submission - clear inputs
+app.submitForm = () => {
+  window.onbeforeunload = () => {
+    for (const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  };
 };
 
 app.init();

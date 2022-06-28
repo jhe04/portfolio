@@ -73,16 +73,16 @@
           <!-- https://codepen.io/rikschennink/pen/mjywQb -->
           <div class="speech-bubble-container">
             <p class="speech-bubble text-about hidden">
-              Great place to start to learn more about me!
+              Don't be shy! Click here to learn more about me 😊
             </p>
             <p class="speech-bubble text-skills hidden">
-              Great place to start to learn more about my skills!
+              Great place to learn more about my tech stack 👨‍💻 
             </p>
             <p class="speech-bubble text-projects hidden">
-              Check out my awesome projects!
+              Now we're talking! Check out my awesome projects 😎
             </p>
             <p class="speech-bubble text-contact hidden">
-              Don't hesitate to contact me!
+              Don't hesitate to slide into my DMs! 📩
             </p>
           </div>
         </div>
@@ -283,10 +283,7 @@
             >
               <h3>Drive Solo</h3>
               <p class="dev-language">HTML, CSS</p>
-              <p>
-                A fully responsive website built based on a PSD. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit. Delectus, sit.
-              </p>
+              <p>A fully responsive website built based on a PSD.</p>
               <div class="project-links">
                 <a
                   href="https://gentle-syrniki-8b3f76.netlify.app/"
@@ -348,19 +345,40 @@
               contact!
             </p>
           </div>
-          <form action="" data-aos="fade-left" data-aos-once="true">
-            <label for="name"></label>
-            <input type="text" id="name" placeholder="name" />
-            <label for="email"></label>
-            <input type="text" id="email" placeholder="email" />
-            <label for="message"></label>
+          <form
+            action="https://formspree.io/f/xbjweqvw"
+            method="POST"
+            data-aos="fade-left"
+            data-aos-once="true"
+          >
+            <label for="name" class="sr-only">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="name"
+              name="name"
+              required
+            />
+
+            <label for="email" class="sr-only">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="email"
+              required
+            />
+
+            <label for="message" class="sr-only">Message</label>
             <textarea
               name="message"
               id="message"
               cols="30"
               rows="10"
               placeholder="message"
+              required
             ></textarea>
+
             <button>Submit</button>
           </form>
         </div>
